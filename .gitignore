@@ -7,7 +7,7 @@
 /coverage
 
 # production
-./.vs
+.vs
 
 # misc
 .DS_Store
