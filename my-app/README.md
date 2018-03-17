@@ -1,5 +1,8 @@
 <h2>Introduction<h2>
-This is a React app with small signup form and list of participants. Users can sort the list by clicking the table headers. Users can also edit or remove the person in the list by using corresponding button.
+This is a React app with small signup form and list of participants. 
+Users can sort the list by clicking the table headers. 
+Users can also edit or remove the person in the list by using corresponding button.
+
 <h2>Installation guide<h2>
 1. Install necessary modules with <code> npm install</code> <br>
 2. Run the app with
