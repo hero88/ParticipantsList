@@ -11,4 +11,4 @@ Users can also edit or remove the person in the list by using corresponding butt
 	<br>Runs the app in the development mode.
 	<br>Open <a href="http://localhost:3000">Localhost</a> to view it in the browser.
 	<br>The page will reload if you make edits.
-	<br>You will also see any lint errors in the console.
+	<br>You will also see any lint errors in the console. 
