@@ -17,10 +17,10 @@ class App extends Component {
       this.deletePerson = this.deletePerson.bind(this);           
    }
 
-   // add a person to list when click 'add' Button
+   // add a person when clicking 'add' Button
    addPerson(event) {
       var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value.indexOf("@");
+      var email = document.getElementById("email").value;
       var phone = document.getElementById("phone").value;
       var submitOK = "true";
 
@@ -33,7 +33,7 @@ class App extends Component {
          submitOK = "false";
       }
 
-      if (email === -1) {
+      if (email.indexOf("@") === -1) {
          alert("Not a valid e-mail!");
          submitOK = "false";
       }
@@ -42,9 +42,9 @@ class App extends Component {
       {           
          var newPerson = {
             id: this.state.persons.length + 1,
-            Fullname: document.getElementById("name").value,
-            Email: document.getElementById("email").value,
-            Phone: document.getElementById("phone").value
+            Fullname: name,
+            Email: email,
+            Phone: phone
          };
          
          this.setState((prevState) => {
@@ -61,7 +61,7 @@ class App extends Component {
       event.preventDefault();
    }
 
-   // delete a person when click the 'delete' Button
+   // delete a person when clicking the 'delete' Button
    deletePerson(key) {
       var filtered = this.state.persons.filter(function (person) {
          return (person.id !== key);
