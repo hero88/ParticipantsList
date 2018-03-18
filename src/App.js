@@ -77,7 +77,8 @@ class App extends Component {
       <div className="App container">
         <header className="App-header">          
              <h1 className="App-title">
-                <img src={logo} className="App-logo" alt="logo" />   Nord Software
+                <img src={logo} className="App-logo" alt="logo" />   
+                Nord Software
              </h1>
         </header>
         <body className="jumbotron">           
