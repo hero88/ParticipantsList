@@ -84,23 +84,23 @@ class App extends Component {
                 LIST OF PARTICIPANTS
            </p>
 
-           <form className="jumbotron jumbotron-fluid" onSubmit={ this.addPerson }>
+           <form className="App-form" onSubmit={ this.addPerson }>
              <div className="row">
-                   <div className="col-sm-3">
+                <div className="col-sm-3">
                       <input type="text" className="form-control" placeholder="Full name" id="name" />
                 </div>
                 <div className="col-sm-4">
                       <input type="text" className="form-control" placeholder="E-mail address" id="email" />
                 </div>
-                <div className="col-sm-3">
+                   <div className="col-sm-3">
                       <input type="text" className="form-control" placeholder="Phone number" id="phone" />
                 </div>
-                <div className="col-sm-1">
+                   <div className="col-sm-2">
                       <button type="submit" className="btn btn-primary">Add new</button>
                 </div>
              </div>
            </form>
-
+            
              <Persons entries={this.state.persons}
                       delete={this.deletePerson}
              />

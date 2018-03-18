@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 import Data from './data.json';  //get the participant's list
 
 class Persons extends Component {
@@ -22,23 +23,23 @@ class Persons extends Component {
             <td> <input type="text" id="newEmail" /></td>
             <td> <input type="text" id="newPhone" /></td>
             <td>
-               <button className="btn btn-sm" id="cancel" onClick={() => this.handleCancel(person.id)}>Cancel</button>
-               <button className="btn btn-sm btn-primary" id="save" onClick={() => this.handleSave(person.id)}>Save</button>
+               <button className="App-table-button btn btn-sm" id="cancel" onClick={() => this.handleCancel(person.id)}>Cancel</button>
+               <button className="App-table-button btn btn-sm btn-primary" id="save" onClick={() => this.handleSave(person.id)}>Save</button>
             </td>
          </tr>                   
       }
       else return <tr key={person.id}>            
-            <td> {person.Fullname} </td>
-            <td>  {person.Email}  </td>
-            <td>  {person.Phone} </td>
-            <td>
+         <td className="App-table-data"> {person.Fullname} </td>
+         <td className="App-table-data">  {person.Email}  </td>
+         <td className="App-table-data">  {person.Phone} </td>
+         <td className="App-table-data">
                <button className="btn btn-sm" id="edit" onClick={() => this.onEdit(person.id)}>
                   <span className="oi oi-pencil" title="pencil" aria-hidden="true"> </span>
                </button>
                <button className="btn btn-sm" id="delete" onClick={() => this.delete(person.id)}>
                   <span className="oi oi-trash" title="trash" aria-hidden="true"> </span>
                </button>
-            </td>
+         </td>
          </tr>;
    }
 
@@ -161,13 +162,13 @@ class Persons extends Component {
       var personList = tableEntries.map(this.createTable);          
 
       return (
-         <table id="persons" className="table table-bordered">    
+         <table id="persons" className="table table-bordered App-table">    
             <thead>
                <tr>                  
-                  <th scope="col" onClick={() => this.onSort(1)} > Name</th>
-                  <th scope="col" onClick={() => this.onSort(2)} > Email address</th>
-                  <th scope="col" onClick={() => this.onSort(3)} > Phone </th>
-                  <th scope="col"> Status </th>
+                  <th className="App-table-header" scope="col" onClick={() => this.onSort(1)} > Name</th>
+                  <th className="App-table-header" scope="col" onClick={() => this.onSort(2)} > Email address</th>
+                  <th className="App-table-header" scope="col" onClick={() => this.onSort(3)} > Phone </th>
+                  <th className="App-table-header" scope="col">  </th>
                </tr>
             </thead>
             <tbody>            

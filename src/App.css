@@ -1,5 +1,41 @@
 .App {
   text-align: center;
+  width:912px;
+}
+
+.App-form{
+	background-color: white;
+	padding: 16px;
+	width: auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.App-table{
+	background-color:white;
+	padding: 0px;
+}
+
+.App-table-header{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #757575;
+	height: 48px;
+}
+
+.App-table-data {
+	height: 72px;
+	color: #505050;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.App-table-button{
+	margin: 5px;
+	width: 70px;
+	font-weight: 500;
 }
 
 .App-logo {
