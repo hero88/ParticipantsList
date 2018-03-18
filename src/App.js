@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.PNG';
 import './App.css';
 import Persons from './Persons';
 import Data from './data.json';  //get the participant's list
@@ -75,10 +75,11 @@ class App extends Component {
    render() {
     return (
       <div className="App container">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          </header>
+        <header className="App-header">          
+             <h1 className="App-title">
+                <img src={logo} className="App-logo" alt="logo" />   Nord Software
+             </h1>
+        </header>
         <body className="jumbotron">           
            <p className="header">
                 LIST OF PARTICIPANTS
